@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import MovieBox from './MovieBox';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const API_URL="https://api.themoviedb.org/3/movie/popular?api_key=089b617253e47ebe55e8aeef2a65814f";
 function App() {
@@ -17,9 +18,11 @@ function App() {
   }, [])
 
   return (
-    <div >
+    <div className='container'>
+      <div className='grid'>
       {movies.map((movieReq)=>
       <MovieBox key={movieReq.id} {...movieReq}/>)}
+      </div>
     </div>
   );
 }
