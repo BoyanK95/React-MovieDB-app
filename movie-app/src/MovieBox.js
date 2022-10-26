@@ -9,6 +9,7 @@ const MovieBox = ({
   vote_average,
   release_date,
   overview,
+  foundMoviesAfterSearch
 }) => {
   
   const [show, setShow] = useState(false);
@@ -22,7 +23,7 @@ const MovieBox = ({
         <img className="card-img-top" src={API_IMG + poster_path} alt="img" />
         <div className="card-body">
           <button type="button" className="btn btn-dark" onClick={handleShow}>
-            Preview
+            {foundMoviesAfterSearch ? 'Save' : 'Preview'}
           </button>
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
