@@ -24,7 +24,7 @@ function App() {
       <Container fluid>
         <Navbar.Brand href="">MovieDb App</Navbar.Brand>
         <Navbar.Brand href="">Trending</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll">
+        <Navbar.Toggle aria-controls="navbarScroll"></Navbar.Toggle>
 
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-3" style={{maxHeight: '100px'}} navbarScroll></Nav>
@@ -39,7 +39,6 @@ function App() {
               <Button variant="secondary" type="submit">Search</Button>
             </Form>
           </Navbar.Collapse>
-        </Navbar.Toggle>
       </Container>
     </Navbar>
       <div className="container">
