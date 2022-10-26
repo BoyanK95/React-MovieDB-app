@@ -22,8 +22,8 @@ function App() {
     <>
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container fluid>
-        <Navbar.Brand href="">MovieDb App</Navbar.Brand>
-        <Navbar.Brand href="">Trending</Navbar.Brand>
+        <Navbar.Brand href="/home">MovieDb App</Navbar.Brand>
+        <Navbar.Brand href="/home">Trending</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll"></Navbar.Toggle>
 
           <Navbar.Collapse id="navbarScroll">
