@@ -1,4 +1,4 @@
-import { Modal, show } from "react-bootstrap";
+import { Modal, show, Button } from "react-bootstrap";
 import React, {useState} from "react";
 
 const API_IMG = "https://image.tmdb.org/t/p/w500/";
@@ -29,14 +29,17 @@ const MovieBox = ({
               <Modal.Title></Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img className="card-img-top" src={API_IMG + poster_path} alt="img"></img>
+              <img className="card-img-top"  src={API_IMG + poster_path} alt="img"></img>
               <h3>{title}</h3>
-              <h4>ImDb: {vote_average}</h4>
+              <h4>IMDb: {vote_average}</h4>
               <h5>Release Date: {release_date}</h5>
               <br></br>
               <h6>Overview:</h6>
               <p>{overview}</p>
             </Modal.Body>
+            <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>Close</Button>
+            </Modal.Footer>
           </Modal>
         </div>
       </div>
